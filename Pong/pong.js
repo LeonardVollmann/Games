@@ -43,7 +43,7 @@ var opponent = {
 	y: null,
 	width: 20,
 	height: 100,
-	speed: 7,
+	speed: 4,
 
 	update: function() {
 		var ballDestY = ball.y + ball.vel.y;
@@ -127,7 +127,7 @@ var ball = {
 };
 
 function main() {
-	canvas = document.createElement("canvas");
+	canvas = document.getElementById("canvas");
 	canvas.width = WIDTH;
 	canvas.height = HEIGHT;
 	context = canvas.getContext("2d");
